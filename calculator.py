@@ -10,6 +10,18 @@ def multiply(a,b):
 def divide(a,b):
 	return a/b
 
+def square(a):
+	return a*a
+
+def cube(a):
+	return a*a*a
+
+def square_n_times(number, n):
+	result = number
+	for _ in range(n-1):
+		result = multiply(result, number)
+	return result
+
 print("I'm going use the calculator functions to multiply 5 and 6")
 x = multiply(5,6)
 print(x)
